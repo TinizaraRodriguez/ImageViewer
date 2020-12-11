@@ -6,8 +6,9 @@ import imageviewer.view.ImageDisplay;
 import imageviewer.view.ImageLoader;
 import java.util.List;
 
-public class LoadCommand implements Command {
 
+public class LoadCommand implements Command {
+    
     private final ImageLoader imageLoader;
     private final List<Image> imageList;
     private final ImageDisplay imageDisplay;

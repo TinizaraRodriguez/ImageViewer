@@ -1,4 +1,3 @@
-
 package imageviewer;
 
 import imageviewer.model.Image;
@@ -10,14 +9,14 @@ public class MockImageLoader implements ImageLoader {
 
     @Override
     public List<Image> load() {
-        List <Image> list = new ArrayList<>();
+        List<Image> list = new ArrayList<>();
         list.add(new Image("hola"));
         list.add(new Image("mundo"));
         list.add(new Image("bienvenido"));
         return list;
-    
-        
     }
-   
+    
     
 }
+
+

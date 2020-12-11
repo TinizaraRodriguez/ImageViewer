@@ -1,17 +1,18 @@
 
 package imageviewer.model;
 
+
 public class Image {
-    private final String name;
     
-    public Image(String name){
+    private final String name;
+
+    public Image(String name) {
         this.name = name;
     }
     
-    
-    public String getName(){
+
+    public String getName() {
         return name;
-        
     }
-    
+
 }

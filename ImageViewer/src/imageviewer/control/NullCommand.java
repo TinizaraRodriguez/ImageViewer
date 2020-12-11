@@ -1,10 +1,11 @@
 
 package imageviewer.control;
 
-public class NullCommand implements Command{
+
+public class NullCommand implements Command {
 
     @Override
-    public void execute(){
-        
+    public void execute() {
     }
+
 }

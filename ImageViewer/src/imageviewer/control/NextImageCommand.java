@@ -7,25 +7,30 @@ import java.util.List;
 
 public class NextImageCommand implements Command {
     
-    private final List <Image> imageList;
+    private final  List<Image> images;
     private final ImageDisplay imageDisplay;
-    
-    public NextImageCommand (List <Image> imageList, ImageDisplay imageDisplay){
-        this.imageList = imageList;
+
+    public NextImageCommand(List<Image> imageList, ImageDisplay imageDisplay) {
+        this.images = images;
         this.imageDisplay = imageDisplay;
     }
-   
-    
+
     @Override
-    public void execute(){
+    public void execute() {
         imageDisplay.display(next());
     }
-
-    private Image next() {
-        int index = imageList.indexOf(imageDisplay.current());
-        index =  (index +1) % imageList.size();
-        return imageList.get(index);
-    }
     
+    private Image next () {
+        return images.get(nextIndex());
+    }
+
+    private int nextIndex() {
+        return (currentIndex()+1)%images.size();
+    }
+
+    private int currentIndex() {
+        return images.indexf(imageDisplay.current());;
+
+    }
+
 }
-//

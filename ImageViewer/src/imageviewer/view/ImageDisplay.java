@@ -3,8 +3,10 @@ package imageviewer.view;
 
 import imageviewer.model.Image;
 
-public interface ImageDisplay {
+
+public interface  ImageDisplay {
+
     void display(Image image);
     Image current();
-    
+          
 }
